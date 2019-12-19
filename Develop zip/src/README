@@ -1,0 +1,35 @@
+A Family of Wines
+
+Running this code locally is as simple as in the lab -- as long as anyone
+has downloaded react and node, after downloading these files you should be
+able to use them as the source files in a directory with all downloaded react
+necessities (created with npm create-react-app), and run the app with npm start from the terminal within that
+directory.
+
+
+Interface design principles:
+I labeled the dropdown select menus with their respective purposes
+to make them more learnable, and the simplicity of the dropdown I hope
+makes it memorable as well. I'd say it's fairly efficient as well. Perhaps
+if I had more time I would have also installed a complete-revert button.
+
+I've learned in this class that I'm not good at CSS, so I do note that:
+-There could be better whitespace between elements
+-There could be better color contrast, particularly in the app header
+
+Data passed through components and user-interaction:
+The user selection of Type, Country and Sorting directly interact
+with the FilteredList component to change its state. Then it uses
+those states to filter its searches on the given item-list
+(a prop of the filtered list). This list is then passed onto the 
+List component which renders the list, perhaps sorted if so chosen.
+
+
+High-level goal:
+This application is useful for its ability to filter searches without
+reloading the webpage, which is so much more convenient.
+
+Webpage purpose:
+This webpage is a searchable and filterable list of wines I enjoy.
+It filters and searches through this list live, without the need to
+reload!
